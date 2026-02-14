@@ -1,13 +1,12 @@
-package com.example.demo_app;
+package com.example.demo_app.controller;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-public class HelloWorld {
+public class IndexController {
 	@GetMapping("/")
 	public String hello() {
-
-		return "hello World!";
+		return "Welcome to Demo Spring Boot Demo!";
 	}
 }
